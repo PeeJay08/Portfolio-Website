@@ -43,6 +43,11 @@ const About = () => {
             am crafting my path to becoming a skilled web developer, ready to
             create dynamic and immersive online experiences.
           </p>
+          <p className="text-lg md:text-left text-center mb-5">
+            Outside of coding life, I enjoy playing
+            video games, working out, playing basketball, playing with my dog
+            named Spike and also cooking.
+          </p>
           <button
             onClick={handleDownload}
             className="text-white text-base rounded-lg border-2 px-4 py-2 mt-7 flex items-center hover:bg-[#A47E3B] hover:border-[#A47E3B] mx-auto md:mx-0"
