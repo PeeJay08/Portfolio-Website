@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React from "react";
+import React, { useRef } from "react";
 import AOS from "aos"
 import { useEffect } from "react";
 import "aos/dist/aos.css"
