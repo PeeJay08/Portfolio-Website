@@ -6,9 +6,23 @@ const Contact = () => {
   useEffect(() => {
     AOS.init({duration: 1000});
   }, [])
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  };
   return (
     <div name="contact" className="w-full h-screen bg-[#0D1F3C] flex justify-center items-center p-4 text-center ">
-      <form method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation" data-aos="fade-up">
+      <form method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation" data-aos="fade-up">
         <div className="pb-8 ">
           <p className="text-5xl font-bold inline border-b-4 border-[#A47E3B] text-[#F0F0F0]">
             Contact
