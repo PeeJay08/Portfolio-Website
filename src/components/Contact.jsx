@@ -1,29 +1,15 @@
 import React from "react";
 import AOS from "aos"
 import { useEffect } from "react";
-import { navigate } from "@reach/router";
 import "aos/dist/aos.css"
 const Contact = () => {
   useEffect(() => {
     AOS.init({duration: 1000});
   }, [])
-  const handleSubmit = (event) => {
-    event.preventDefault();
   
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-  
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => navigate("/thank-you/"))
-      .catch((error) => alert(error));
-  };
   return (
     <div name="contact" className="w-full h-screen bg-[#0D1F3C] flex justify-center items-center p-4 text-center ">
-      <form name="contact v1" method="post" onSubmit={handleSubmit} data-netlify="true" className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation" data-aos="fade-up">
+      <form name="contact v1" method="post" data-netlify="true" className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation" data-aos="fade-up">
       <input type="hidden" name="form-name" value="contact v1" />
         <div className="pb-8 ">
           <p className="text-5xl font-bold inline border-b-4 border-[#A47E3B] text-[#F0F0F0]">
