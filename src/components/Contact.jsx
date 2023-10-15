@@ -20,7 +20,12 @@ const Contact = () => {
       .then(() => console.log("Form successfully submitted"))
       .catch((error) => alert(error));
   };
-  document.querySelector("form").addEventListener("submit", handleSubmit);
+  useEffect(() => {
+    const form = document.querySelector("form");
+    if (form) {
+      form.addEventListener("submit", handleSubmit);
+    }
+  }, []);
   return (
     <div name="contact" className="w-full h-screen bg-[#0D1F3C] flex justify-center items-center p-4 text-center ">
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation" data-aos="fade-up">
