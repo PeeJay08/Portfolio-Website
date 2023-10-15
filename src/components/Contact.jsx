@@ -8,7 +8,7 @@ const Contact = () => {
   }, [])
   return (
     <div name="contact" className="w-full h-screen bg-[#0D1F3C] flex justify-center items-center p-4 text-center ">
-      <form method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation" data-aos="fade-up">
+      <form method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation" data-aos="fade-up">
         <div className="pb-8 ">
           <p className="text-5xl font-bold inline border-b-4 border-[#A47E3B] text-[#F0F0F0]">
             Contact
