@@ -10,7 +10,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
  
-    emailjs.sendForm('service_bduvpad', 'service_bduvpad', form.current, '0tLaPJSXl9P2BJDT6')
+    emailjs.sendForm('service_bduvpad', 'template_0voxq8s', form.current, '0tLaPJSXl9P2BJDT6')
       .then((result) => {
         console.log(result.text)
         console.log("Message sent")
