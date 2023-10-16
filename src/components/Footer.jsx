@@ -4,7 +4,7 @@ import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#0a192f] text-gray-300 py-4 text-center">
-      <div className="flex justify-center space-x-4">
+      <div className="flex justify-center space-x-4 mt-auto">
         <a
           href="https://github.com/PeeJay08"
           target="_blank"

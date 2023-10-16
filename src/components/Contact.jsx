@@ -8,7 +8,7 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    e.preventDefault();
 
     emailjs
       .sendForm(
@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0D1F3C] flex justify-center items-center p-4 text-center "
+      className="w-full h-screen bg-[#0D1F3C] flex justify-center items-center p-4 text-center"
     >
       <form
         ref={form}
@@ -42,7 +42,7 @@ const Contact = () => {
         className="flex flex-col max-w-[1200px] w-full shadow-md shadow-[#040c16] p-4 md:text-left mt-20 text-center animation"
         data-aos="fade-up"
       >
-        <div className="pb-8 ">
+        <div className="pb-4 ">
           <p className="text-5xl font-bold inline border-b-4 border-[#A47E3B] text-[#F0F0F0]">
             Contact
           </p>
@@ -67,13 +67,13 @@ const Contact = () => {
           className="bg-light-gray p-2 md:mx-20 sm:mx-10"
           name="message"
           cols="30"
-          rows="10"
+          rows="8"
           placeholder="Message"
         ></textarea>
         <input
           type="submit"
           value="Submit"
-          className="text-[#F0F0F0] text-lg rounded-lg border-2 cursor-pointer hover:bg-[#A47E3B] hover:border-[#A47E3B] px-5 py-3 my-8 mx-auto flex item-center"
+          className="text-[#F0F0F0] text-lg rounded-lg border-2 cursor-pointer hover:bg-[#A47E3B] hover:border-[#A47E3B] px-5 py-3 my-2 mx-auto flex item-center"
         />
       </form>
     </div>

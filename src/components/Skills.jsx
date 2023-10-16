@@ -6,7 +6,6 @@ import ReactImg from "../assets/react.png";
 import Node from "../assets/nodejs.png";
 import Express from "../assets/express.png"
 import Mongo from "../assets/mongo.png";
-import Github from "../assets/github.png";
 import Git from "../assets/git.png"
 import AOS from "aos"
 import { useEffect } from "react";
@@ -22,42 +21,38 @@ const Skills = () => {
         <div>
             <p className="text-5xl font-bold inline border-b-4  border-[#A47E3B]">Skills</p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={HTML} alt="HTML Icon" />
-                <p className="my-4 text-2xl">HTML</p>
+                <p className="my-4 text-2xl md:text-xl">HTML</p>
             </div>
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={CSS} alt="CSS Icon" />
-                <p className="my-4 text-2xl">CSS</p>
+                <p className="my-4 text-2xl md:text-xl">CSS</p>
             </div>
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={JavaScript} alt="JavaScript Icon" />
-                <p className="my-4 text-2xl">JavaScript</p>
+                <p className="my-4 text-2xl md:text-xl">JavaScript</p>
             </div>
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={ReactImg} alt="React Icon" />
-                <p className="my-4 text-2xl">ReactJS</p>
+                <p className="my-4 text-2xl md:text-xl">ReactJS</p>
             </div>
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={Node} alt="Node Icon" />
-                <p className="my-4 text-2xl">NodeJS</p>
+                <p className="my-4 text-2xl md:text-xl">NodeJS</p>
             </div>
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={Express} alt="ExpressJS Icon" />
-                <p className="my-4 text-2xl">ExpressJS</p>
+                <p className="my-4 text-2xl md:text-xl">ExpressJS</p>
             </div>
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={Mongo} alt="Mongo Icon" />
-                <p className="my-4 text-2xl">MongoDB</p>
+                <p className="my-4 text-2xl md:text-xl">MongoDB</p>
             </div>
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto" src={Git} alt="Git Icon" />
-                <p className="my-4 text-2xl">Git</p>
-            </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                <img className="w-20 mx-auto" src={Github} alt="Github Icon" />
-                <p className="my-4 text-2xl">GitHub</p>
+                <p className="my-4 text-2xl md:text-xl">Git</p>
             </div>
         </div>
     </div>

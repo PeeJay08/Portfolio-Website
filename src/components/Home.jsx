@@ -15,7 +15,7 @@ const Home = () => {
       <div className="max-w-[1200px] mx-auto my-auto px-4 md:px-8 flex flex-col justify-center h-full animation" data-aos="fade-up">
         <div className="flex flex-col md:flex-row md:items-center">
           <div className="md:w-1/2">
-            <p className="text-xl text-[#F0F0F0] text-center md:text-left">
+            <p className="text-xl text-[#F0F0F0] mt-20 text-center md:text-left">
               Hi there, my name is
             </p>
             <h1 className="text-5xl sm:text-8xl font-bold text-[#ccd6f6] text-center md:text-left">

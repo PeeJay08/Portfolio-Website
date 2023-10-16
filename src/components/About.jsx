@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className="w-full flex justify-start">
             <img
-              style={{ width: "100%", maxWidth: 320, height: 400 }}
+              style={{ width: "100%", maxWidth: 320, height: 350 }}
               src={Avatar}
               alt="Avatar"
               className="rounded-lg mb-4 shadow-lg shadow-[#040c16] bg-[#C0C0C0]"
@@ -50,7 +50,7 @@ const About = () => {
           </p>
           <button
             onClick={handleDownload}
-            className="text-white text-base rounded-lg border-2 px-4 py-2 mt-7 flex items-center hover:bg-[#A47E3B] hover:border-[#A47E3B] mx-auto md:mx-0"
+            className="text-white text-base rounded-lg border-2 px-4 py-2 mt-7 flex items-center hover:bg-[#A47E3B] hover:border-[#A47E3B] my-auto mx-auto md:mx-0"
           >
             Download Resume <HiDownload className="ml-2" />
           </button>
