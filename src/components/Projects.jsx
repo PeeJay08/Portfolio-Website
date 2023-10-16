@@ -99,7 +99,7 @@ const Projects = () => {
             <div className="text-center mt-2 text-xl">QuizyB (MERN APP)</div>
             <p className="text-center mt-1 text-base">With QuizyB, quiz builders can design multiple-choice quizzes with specific questions and answers. On the players side, they can access these quizzes using unique reference codes given by the quiz builders.</p>
             <div className="pt-4 text-center">
-              <a href="https://quizyb.netlify.app/login" target="_blank" rel="noreferrer" >
+              <a href="https://quizyb.netlify.app/" target="_blank" rel="noreferrer" >
                 <button className="rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-xl border-2 hover:bg-[#A47E3B] hover:border-[#A47E3B]">
                   Demo
                 </button>
