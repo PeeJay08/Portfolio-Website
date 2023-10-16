@@ -37,13 +37,13 @@ const About = () => {
         <p className="py-3 md:text-left text-center text-2xl">
             Hi! I'm PJ, nice to meet you.
           </p>
-          <p className="text-lg md:text-left text-center mb-5">
+          <p className="md:text-lg sm:text-base md:text-left text-center mb-5">
             A graduate with a degree of BS in Computer Engineering. Enrolled at
             Uplift Code Camp as a Full-Stack Web Developer. As a Web Developer, I
             am crafting my path to becoming a skilled web developer, ready to
             create dynamic and immersive online experiences.
           </p>
-          <p className="text-lg md:text-left text-center mb-5">
+          <p className="md:text-lg sm:text-base md:text-left text-center mb-5">
             Outside of coding life, I enjoy playing
             video games, working out, playing basketball, playing with my dog
             named Spike and also cooking.
